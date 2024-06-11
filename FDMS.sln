@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDMS.UI", "FDMS.UI\FDMS.UI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDMS.BL", "FDMS.BL\FDMS.BL.csproj", "{0EF1EEE6-73FA-43A0-BD57-DFAB572E184B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDMS.Model", "FDMS.Model\FDMS.Model.csproj", "{865079D7-9895-4E81-B362-54F8E5351BCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0EF1EEE6-73FA-43A0-BD57-DFAB572E184B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EF1EEE6-73FA-43A0-BD57-DFAB572E184B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EF1EEE6-73FA-43A0-BD57-DFAB572E184B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865079D7-9895-4E81-B362-54F8E5351BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865079D7-9895-4E81-B362-54F8E5351BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865079D7-9895-4E81-B362-54F8E5351BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865079D7-9895-4E81-B362-54F8E5351BCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
