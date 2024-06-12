@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Position.cs" />
     <Compile Include="Entities\Worker.cs" />
+    <Compile Include="Managers\PositionManager.cs" />
     <Compile Include="Managers\WorkerManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

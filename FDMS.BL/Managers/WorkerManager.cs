@@ -23,8 +23,6 @@ namespace FDMS.Model.Entities
             new Worker(8, "Седокина Алина", "salina086@gmail.com"),
         };
 
-        public WorkerManager() { }
-
         public static void AddWorker(string name, string email) 
         { 
             var id = Workers.Count() + 1;
