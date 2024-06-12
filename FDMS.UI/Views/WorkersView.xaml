@@ -1,0 +1,23 @@
+﻿<Window x:Class="FDMS.UI.Views.WorkersView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FDMS.UI.Views"
+        mc:Ignorable="d"
+        Title="Персонал" Height="348" Width="655">
+    <Grid>
+        <Button Command="{Binding ShowAddWorkerWinCmd}" Content="Добавить" HorizontalAlignment="Left" Height="25" Margin="488,20,0,0" VerticalAlignment="Top" Width="136" RenderTransformOrigin="-0.165,0.521"/>
+        <ListView Name="WorkersList" ItemsSource="{Binding Workers}" HorizontalAlignment="Center" Height="213" VerticalAlignment="Center" Width="592" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="ФИО"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Email}" Header="Email"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox HorizontalAlignment="Left" Text="{Binding FilterTxtText}" Margin="32,20,0,0" TextWrapping="Wrap" Name="FilterTxt" TextChanged="FilterTxtChanged" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.517,-0.889"/>
+
+    </Grid>
+</Window>

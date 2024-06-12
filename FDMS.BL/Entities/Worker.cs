@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FDMS.UI.Models
+namespace FDMS.BL.Entities
 {
     public class Worker
     {

@@ -41,14 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Worker.cs" />
     <Compile Include="Managers\WorkerManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FDMS.Model\FDMS.Model.csproj">
-      <Project>{865079d7-9895-4e81-b362-54f8e5351bcf}</Project>
-      <Name>FDMS.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

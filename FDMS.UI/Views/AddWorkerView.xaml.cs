@@ -1,8 +1,6 @@
-﻿using FDMS.BL.Entities;
-using FDMS.UI.Views;
+﻿using FDMS.UI.ViewModels;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,26 +11,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FDMS.UI
+namespace FDMS.UI.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddWorkerView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddWorkerView : Window
     {
-        public MainWindow()
+        public AddWorkerView()
         {
             InitializeComponent();
 
-        }
+            var viewModel = new AddWorkerViewModel((s, e) => this.Close());
+            this.DataContext = viewModel;
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var vorkersView = new WorkersView();
-            vorkersView.Show();
         }
     }
 }
