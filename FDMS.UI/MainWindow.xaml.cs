@@ -29,10 +29,16 @@ namespace FDMS.UI
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Staff_Click(object sender, RoutedEventArgs e)
         {
-            var vorkersView = new WorkersView();
-            vorkersView.Show();
+            var workersView = new WorkersView();
+            workersView.Show();
+        }
+
+        private void Positions_Click(object sender, RoutedEventArgs e)
+        {
+            var positionsView = new PositionsView();
+            positionsView.Show();
         }
     }
 }

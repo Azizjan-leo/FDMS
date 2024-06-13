@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FDMS.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Пожарное депо" Height="450" Width="800">
     <Grid>
-        <Button Content="Персонал" HorizontalAlignment="Left" Height="34" Margin="37,28,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click"/>
+        <Button Content="Персонал" HorizontalAlignment="Left" Height="34" Margin="37,28,0,0" VerticalAlignment="Top" Width="144" Click="Staff_Click"/>
+        <Button Content="Должности" HorizontalAlignment="Left" Height="34" Margin="204,28,0,0" VerticalAlignment="Top" Width="144" Click="Positions_Click"/>
 
     </Grid>
 </Window>

@@ -1,14 +1,10 @@
 ﻿using FDMS.BL.Entities;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FDMS.BL.Managers
 {
-    internal class PositionManager
+    public class PositionManager
     {
         // Mock api data
         public static ObservableCollection<Position> Positions = new ObservableCollection<Position>()
